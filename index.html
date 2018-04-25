@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>手机登录</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="flexible" content="initial-dpr=3" />
+    <link rel="stylesheet" href="plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <h1>我的github上的第一个文件</h1>
+    <div class="layui-container">
+        <div class="layui-row menu">
+            <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 menu-name">姓名:</div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 menu-price"><input  placeholder="请输入姓名" /></div>
+        </div>
+        <div class="layui-row menu">
+            <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 menu-name">联系方式:</div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 menu-price"><input  placeholder="请输入手机号码" /></div>
+        </div>
+        <div class="layui-row menu">
+            <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 menu-name">验证码:</div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 menu-price"><input  placeholder="请输入验证码" /></div>
+            <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 menu-buttom"><button class="layui-bg-green">获取验证码</button></div>
+        </div>
+        <div class="layui-row menu">
+            <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 menu-name">注册码:</div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 menu-price"><input  placeholder="请输入星名媛卡的8位注册码" /></div>
+        </div>
+        <div class="layui-row menu">
+            <button class="layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-xs-offset4 layui-col-sm-offset4 layui-col-md-offset4 menu-login layui-bg-green">立即提交</button>
+        </div>
+        <div class="layui-row activity-rules">
+            <h5>活动规则:</h5>
+            <p>1.每人只能够参加一次活动</p>
+            <p>2.每人只可以投一票</p>
+        </div>
+    </div>
+
+    <script src="plugin/layui/layui.js"></script>
 </body>
 </html>
