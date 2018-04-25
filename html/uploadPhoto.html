@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="gbk">
     <title>图片列表</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,
         minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -12,8 +12,29 @@
 <body>
     <div class="layui-container">
         <div class="layui-row upload-system">
-            <span class="title layui-col-xs2 layui-col-sm2 layui-col-md2">姓名:</span>
-            <span class="name layui-col-xs6 layui-col-sm6 layui-col-md6">张三</span>
+            <span class="title layui-col-xs2 layui-col-sm2 layui-col-md2">旧照片:</span>
+            <div class="name layui-col-xs4 layui-col-sm4 layui-col-md4">
+                <input id="file" class="files" type="file" onchange="changepic(this)"/>
+                <img id="img" class="image" src="../image/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="layui-row upload-system">
+            <span class="title layui-col-xs2 layui-col-sm2 layui-col-md2">新照片:</span>
+            <div class="name layui-col-xs4 layui-col-sm4 layui-col-md4">
+                <input id="files" class="files" type="file"  onchange="changepics(this)"/>
+                <img id="imgs" class="image" src="../image/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="layui-row upload">
+            <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 upload-name">姓名:</div>
+            <div class="layui-col-xs8 layui-col-sm8 layui-col-md8 upload-price"><input  placeholder="请输入姓名" /></div>
+        </div>
+        <div class="layui-row upload" style="height: 80px;">
+            <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 upload-name">口号:</div>
+            <textarea class="layui-col-xs8 layui-col-sm8 layui-col-md8 upload-text" rows="2" cols="3" maxlength="50" placeholder="请输入口号"></textarea>
+        </div>
+        <div class="layui-row upload">
+            <button class="layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-xs-offset4 layui-col-sm-offset4 layui-col-md-offset4 upload-login layui-bg-green">立即提交</button>
         </div>
     </div>
 

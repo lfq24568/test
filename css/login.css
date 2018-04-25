@@ -1,0 +1,64 @@
+body {
+  background: #e46262;
+}
+.menu {
+  height: 40px;
+  margin-top: 10px;
+}
+.menu .menu-name {
+  height: 100%;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+}
+.menu .menu-price {
+  height: 40px;
+}
+.menu .menu-price input {
+  display: inline-block;
+  height: 100%;
+  width: 90%;
+  border: 0;
+  margin-left: 10%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+.menu .menu-buttom {
+  height: 40px;
+}
+.menu .menu-buttom button {
+  display: inline-block;
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+  line-height: 40px;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+}
+.menu .menu-login {
+  display: inline-block;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+}
+.activity-rules {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.activity-rules h5 {
+  font-size: 14px;
+  padding: 6px 0;
+  font-weight: 700;
+  color: #383838;
+}
+.activity-rules p {
+  font-size: 12px;
+  color: #ddd9d9;
+  text-indent: 4em;
+  line-height: 20px;
+}

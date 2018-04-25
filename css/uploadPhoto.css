@@ -1,3 +1,79 @@
 .upload-system {
   margin-top: 6px;
+  height: 75px;
+}
+.upload-system .title {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+}
+.upload-system .name {
+  position: relative;
+}
+.upload-system .name .files {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  z-index: 10;
+  opacity: 0;
+}
+.upload-system .name .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.upload {
+  height: 40px;
+  margin-top: 10px;
+}
+.upload .upload-name {
+  height: 100%;
+  font-size: 14px;
+  font-weight: 700;
+}
+.upload .upload-price {
+  height: 40px;
+}
+.upload .upload-price input {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #5c5a5a;
+  line-height: 40px;
+  text-indent: 2em;
+  border-radius: 3px;
+}
+.upload .upload-text {
+  height: 80px;
+  border-radius: 3px;
+  text-indent: 2em;
+  color: #4e4c4c;
+  padding: 3px;
+  line-height: 18px;
+}
+.upload .upload-buttom {
+  margin-top: 10px;
+  height: 40px;
+}
+.upload .upload-buttom button {
+  display: inline-block;
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+  line-height: 40px;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+}
+.upload .upload-login {
+  display: inline-block;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
 }
