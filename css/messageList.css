@@ -1,0 +1,68 @@
+.message-seek {
+  margin-top: 6px;
+}
+.message-seek input {
+  display: inline-block;
+  height: 34px;
+  border: 1px solid #1e9fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-indent: 2em;
+}
+.message-seek i {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 20px;
+  background: #1e9fff;
+  color: #fff;
+}
+.message-seek .message-icon {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #009688;
+}
+.message-list {
+  border-top: 1px solid #ccc;
+  margin-top: 6px;
+}
+.message-list .message-print-list {
+  border-bottom: 1px solid #ccc;
+}
+.message-list .message-print-list .message-img img {
+  display: inline-block;
+  margin-top: 6px;
+  height: 75px;
+  border-radius: 5px;
+  border: 0;
+}
+.message-list .message-print-list .message-system span {
+  display: inline-block;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #393D49;
+}
+.message-list .message-print-list .message-system span.name {
+  color: #4e4c4c;
+}
+.message-list .message-print-list .message-share {
+  height: 35px;
+  font-size: 20px;
+}
+.message-list .message-print-list .message-share i {
+  display: inline-block;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+.message-list .message-print-list .message-share i.likes {
+  color: #ee0e0e;
+}
+.message-list .message-print-list .message-share span {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  color: #ccc;
+}

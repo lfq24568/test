@@ -1,0 +1,56 @@
+.merchant {
+  margin-top: 10px;
+}
+.merchant .merchant-name {
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+}
+.merchant .merchant-price {
+  height: 40px;
+}
+.merchant .merchant-price input {
+  display: inline-block;
+  height: 40px;
+  width: 90%;
+  border: 1px solid #dddddd;
+  margin-left: 10%;
+  line-height: 40px;
+  text-indent: 2em;
+  border-radius: 3px;
+}
+.merchant .merchant-img {
+  position: relative;
+  height: 55px;
+}
+.merchant .merchant-img #file {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 55px;
+  width: 55px;
+  border: 0;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+}
+.merchant .merchant-img #img {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 55px;
+  width: 55px;
+  border: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+.merchant .merchant-login {
+  display: inline-block;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+}

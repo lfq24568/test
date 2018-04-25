@@ -1,0 +1,56 @@
+.list-wrap {
+  margin-top: 6px;
+}
+.list-wrap .user-seek {
+  height: 34px;
+}
+.list-wrap .user-seek input {
+  display: inline-block;
+  height: 34px;
+  margin-left: 5px;
+  border: 1px solid #1E9FFF;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.list-wrap .user-seek i {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 20px;
+  background: #1E9FFF;
+  color: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.list-main {
+  margin-top: 10px;
+  border-top: 1px solid #dddddd;
+}
+.list-main li {
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+}
+.list-main li .list-img {
+  flex: 0 0 55px;
+  height: 55px;
+  width: 55px;
+  border: 0;
+  margin: 5px 8px 5px 0;
+  border-radius: 50%;
+}
+.list-main li .list-message {
+  flex: 1;
+  color: #c2c2c2;
+}
+.list-main li .list-message .list-name {
+  font-size: 14px;
+  padding: 3px 0;
+}
+.list-main li .list-message .list-phone {
+  font-size: 14px;
+}
+.list-main li .list-message .list-site {
+  margin-top: 5px;
+  font-size: 12px;
+}
