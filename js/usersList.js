@@ -26,3 +26,8 @@ $('.select-value1').mPicker({
     cancel: function (json) {
     }
 })
+
+// 用户列表展示信息
+getAjax('/userList',function(res){
+    console.log(res)
+})

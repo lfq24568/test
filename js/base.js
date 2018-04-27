@@ -1,15 +1,15 @@
-var serve_url = ''; //url地址头
+var serve_url = 'http://193.112.43.144:8080'; //url地址头
 
 //ajax调用封装
 function getAjax(url,data,callBack,async) { //地址,请求参数,成功回调
     var async = async===true ? true : false;
     var headers = {
-        'Accept':'application/json',
-        'Authorization': getLocal('token')
+        'Accept':'application/json'
+        // 'Authorization': getLocal('token')
     };
     $.ajax({
         type: 'get',
-        url: serve_url+'/futurechain/api/app/v1/'+url,
+        url: serve_url+'/niwu/'+url,
         dataType: "json",
         data: data,
         headers: headers,
@@ -35,12 +35,12 @@ function postAjax(url,data,callBack,async,errorCB) {
     var data = JSON.stringify(data);
     var headers = {
         'Content-Type': 'application/json; charset=UTF-8',
-        'Accept':'application/json',
-        'Authorization': getLocal('token')
+        'Accept':'application/json'
     };
+    console.log(data)
     $.ajax({
         type: 'post',
-        url: serve_url+'/futurechain/api/app/v1/'+url,
+        url: serve_url+'/niwu/'+url,
         dataType: "json",
         data: data,
         headers: headers,
@@ -68,7 +68,7 @@ function postAjax(url,data,callBack,async,errorCB) {
 function formAjax(url,data,callBack,errorCB) {
     $.ajax({
         type: 'post',
-        url: serve_url+'/futurechain/api/app/v1/'+url,
+        url: serve_url+'/niwu/'+url,
         dataType: "json",
         data: data,
         processData: false,  
