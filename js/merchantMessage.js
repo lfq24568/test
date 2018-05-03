@@ -24,13 +24,13 @@ function getObjectURL(file) {
 
 //地区二级联动
 $('.select-value1').mPicker({
-    level: 2,
-    dataJson: dataJson,
+    level: 3,
+    dataJson: city3,
     Linkage: true,
     rows: 6,
     idDefault: true,
     splitStr: '-',
-    header: '<div class="mPicker-header">两级联动选择插件</div>',
+    header: '<div class="mPicker-header">选择地区</div>',
     confirm: function (json) {
         console.info('当前选中json：', json);
         // var _this= this;

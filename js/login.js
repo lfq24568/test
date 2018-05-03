@@ -4,12 +4,11 @@ var authCode = '';  //保存验证码
 $('.menu')
     .on('click','#getsms',function() {
         getCode();
-        var get_code=$('#getsms');
-        time(get_code);
     })
     .on('click','.menu-login',function() {
         getSubmit();
     })
+
 
 // 获取验证码
 function getCode() {
@@ -22,18 +21,22 @@ function getCode() {
     console.log(phone)
     $.ajax({
         type: "get",
-        url: '/niwu/checkPhone',
+        url: 'http://193.112.43.144:8080/niwu/checkPhone',
         data: {"phone":phone},
         dataType: "json",
         success: function (res) {
             var data = JSON.parse(res.message);
             if(data.code === 200) {
                 authCode = data.obj;
+                var get_code=$('#getsms');
+                time(get_code);
+            } else {
+                layer.msg(res.message);
             }
         
         },
         error: function (result, status) { 
-            layer.msg('系统错误');
+            layer.msg(result);
         }
     });
 }
@@ -62,7 +65,7 @@ function getSubmit() {
     formdata.append('name',$('.name').val());
     formdata.append('phone',$('#phone').val());
     formdata.append('authCode',authCode);
-    formdata.append('registrationCode',$('.registrationCode').val());
+    formdata.append('registNum',$('.registrationCode').val());
     formAjax('/addUser',formdata,function(res) {
         console.log(res);
     })

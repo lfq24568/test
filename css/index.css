@@ -1,7 +1,17 @@
-.main {
-  margin-top: 10px;
+.main-wrap {
+  height: -webkit-fill-available;
+  width: 100%;
+  background: url(../image/1.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
-.main .main-login {
+.main-wrap .main {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+}
+.main-wrap .main .main-login {
   display: inline-block;
   height: 40px;
   line-height: 40px;
@@ -9,5 +19,19 @@
   font-size: 14px;
   color: #fff;
   border-radius: 3px;
+  cursor: pointer;
   border: 0;
+}
+.main-wrap .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.main-wrap .footer span {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
 }
